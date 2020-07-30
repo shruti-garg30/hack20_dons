@@ -1,6 +1,5 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
-print 1+1
 
 # use creds to create a client to interact with the Google Drive API
 scope = ['https://spreadsheets.google.com/feeds']
@@ -14,4 +13,4 @@ sheet = client.open("email sample").sheet1
 # Extract and print all of the values
 list_of_hashes = sheet.get_all_records()
 #print ("abc")
-print list_of_hashes
+print (list_of_hashes)
