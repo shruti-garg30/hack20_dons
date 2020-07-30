@@ -1,7 +1,7 @@
 import webbrowser
 from csv import reader
 
-the_file = 'C:/Users/Master/Desktop/hevothon/emails.csv'
+the_file = 'C:\Users\Shruti\Documents\GitHub\hack20_dons\emails.csv'
 opened_file= open(the_file)
 
 email_list= list(reader(opened_file))
