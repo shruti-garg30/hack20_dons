@@ -1,13 +1,14 @@
 from tkinter import *
 import t
 import callfunction
+from tqdm import tqdm
 class MyWindow:
     data=[]
     def __init__(self, win):
-        
+       
         #replace data with values of list
         self.lb = Listbox(win,width=80, height=20, selectmode='multiple')
-       data=[]
+        data=[]
         for num in data:
             self.lb.insert(END,num)
         self.btn1 = Button(win, text='Select All')
@@ -33,7 +34,7 @@ class MyWindow:
         for x in range(len(selection)):
             l.append(self.data[selection[x]])
         callfunction.callfunction(l)
-        
+       
 
 window=Tk()
 mywin=MyWindow(window)
