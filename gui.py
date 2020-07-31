@@ -21,6 +21,6 @@ class MyWindow:
         #oshi add function here
 window=Tk()
 mywin=MyWindow(window)
-window.title('Hello Python')
+window.title('HevoValYou')
 window.geometry("400x300+10+10")
 window.mainloop()
